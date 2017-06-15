@@ -1,0 +1,197 @@
+.fewest_jumps_wrapper
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row;
+}
+/*** Visualization wrapper ***/
+.display_container
+{
+	width: 80%;
+	max-width: 600px;
+	margin: 20px auto;
+	font-size: 0.8rem;
+	line-height: 0.8rem;
+	text-align: left;
+	background-color: white; 
+	border-radius: 5px;
+	color: black;
+}
+@media all and (max-width: 400px){
+	.display_container
+	{
+		display: none;
+	}
+}
+.display_container p
+{
+
+	color: black;
+}
+.sim_data_wrapper
+{
+	width: 100%;
+	padding: 20px 0;
+}
+.sim_data_wrapper p 
+{
+	text-align: left;
+}
+.current_reach_wrapper
+{
+}
+.current_reach_bar
+{
+	border-radius: 20px;
+	width: 0px;
+	height: 10px;
+	background-color: #961d20;
+	transition: all 0.3s linear;
+}
+.max_reach_wrapper
+{
+	color: blue;
+}
+.max_reach_box
+{
+	vertical-align: top;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	height: 25px;
+}
+.max_reach_box p
+{
+	display: inline-block;
+	margin: 0;
+}
+.max_reach_display
+{
+	display: inline-block;
+	height: 25px;
+	transform: translate(15px, 5px);
+	transition: all 0.4s linear;	
+}
+.max_reach_display.active
+{
+	transform: translateY(-20px);
+}
+.max_reach_display div
+{
+	padding: 0;
+	margin: 0;
+}
+.max_reach_bar
+{
+	border-radius: 20px;
+	width: 0px;
+	height: 10px;
+	background-color: #2da6d1;
+	transition: all 0.3s linear;
+}
+.final_step
+{
+	padding: 0;
+	margin: 0px 15px 10px;
+	font-size: 14px;
+	display: none;
+	font-style: italic;
+}
+/**** Array animation wrapper ****/
+.jump_curve
+{
+	border-radius: 80%;
+	border: 5px solid red;
+	margin: 0;
+	padding: 0;
+	width: 30px;
+	height: 40px;
+	transform: translateY(25px);
+	transition: width 0.3s linear;
+	z-index: -1;
+}
+.array_wrapper
+{
+	width: 100%;
+	margin: 0 0;
+	background-color: white;
+	position: relative;
+}
+.array_el
+{
+	display: inline-block;
+	width: 16px;
+	font-size: 15px;
+	padding: 3px;
+	border: 2px solid black;
+	border-radius: 2px;
+	text-align: center;
+	color: black;
+}
+.array_el.active
+{
+	background-color: #7ba93d;
+	background-opacity: 0.8;
+}
+.array_el.current
+{
+	background-color: #961d20;
+	background-opacity: 0.8;
+	opacity: 0.4;
+}
+.array_el.max
+{
+	background-color: #2da6d1;
+	background-opacity: 0.8;
+	opacity: 0.4;
+}
+.sim_completion_y
+{
+	position: absolute;
+	display: none;
+	right: -40px;
+	top: -20px;
+	width: 40px;
+	height: 50px;
+	background: url("/assets/images/tick_y.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.sim_completion_n
+{
+	position: absolute;
+	display: none;
+	right: -40px;
+	top: -10px;
+	width: 40px;
+	height: 50px;
+	background: url("/assets/images/tick_n.svg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+.max_reach_operation
+{
+	color: black;
+}
+.start_sim_button
+{
+	margin: 15px 10px;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: none;
+	border: none;
+	background-color: #272822;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+}
+.start_sim_button:hover
+{
+	background-color: #383933;
+}

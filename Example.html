@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fewest jumps</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="fewest_jumps_wrapper">
+			<div class="display_container">
+				<div class="display_container">
+					<div class="sim_data_wrapper">
+						<p class="position_ppointer">Position of pointer: <span class="pointer">1</span></p>
+						<p class="step_display">Number of jumps: <span class="step">0</span></p>
+						<div class="current_reach_wrapper">
+							<p>Current reach without increasing number of jumps: <span class="current_reach">0</span></p>
+							<div class="current_reach_bar"></div>
+						</div>
+						<br>
+						<div class="max_reach_wrapper">
+							<div class="max_reach_box">
+								<p>pointer + array[pointer] = </p>
+								<div class="max_reach_display">
+									<div class="max_reach_operation">0 + 0</div>
+								</div>
+							</div>
+							<p>Maximum recorded reach: <span class="max_reach">0</span></p>
+							<div class="max_reach_bar"></div>
+						</div>
+					</div>
+					<div class="array_wrapper">
+						<div class="array_el active">--</div>
+						<div class="array_el">--</div>
+						<div class="array_el">--</div>
+						<div class="array_el">--</div>
+						<div class="array_el">--</div>
+						<div class="array_el">--</div>
+						<div class="array_el">--</div>
+						<div class="array_el">--</div>
+						<div class="array_el">--</div>
+						<div class="array_el">--</div>
+						<div class="array_el">--</div>
+						<div class="sim_completion_y"></div>
+						<div class="sim_completion_n"></div>
+					</div>		
+				</div>
+				<button class="start_sim_button">Start Simulation</button>
+				<p class="final_step"></p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="fewest_jumps.js"></script>
+</html>
